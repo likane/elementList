@@ -14,6 +14,9 @@ const ArtistSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  artist_genre: {
+    type: String
+  },
   date: {
     type: Date,
     default: Date.now
