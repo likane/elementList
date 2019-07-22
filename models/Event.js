@@ -17,6 +17,12 @@ const EventSchema = new mongoose.Schema({
   event_guest_list: {
     type: [int]
   },
+  attended_guests: {
+    type: [int]
+  },
+  guests_not_attended: {
+    type: [int]
+  },
   event_date: {
     type: Date
   },
@@ -26,4 +32,4 @@ const EventSchema = new mongoose.Schema({
   }
 });
 
-module.exports = Event = mongoose.model("event", UserSchema);
+module.exports = Event = mongoose.model("event", EventSchema);
